@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="deepexi-service-a-api" />
+        <module name="deepexi-service-a-provider" />
+        <module name="deepexi-service-b-api" />
+        <module name="deepexi-service-b-provider" />
+        <module name="optimus-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="deepexi-service-a" target="1.8" />
+      <module name="deepexi-service-a-api" target="1.8" />
+      <module name="deepexi-service-a-provider" target="1.8" />
+      <module name="deepexi-service-b" target="1.8" />
+      <module name="deepexi-service-b-api" target="1.8" />
+      <module name="deepexi-service-b-provider" target="1.8" />
+      <module name="optimus-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

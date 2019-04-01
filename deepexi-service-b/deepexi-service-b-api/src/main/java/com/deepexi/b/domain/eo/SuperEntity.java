@@ -1,9 +1,10 @@
 package com.deepexi.b.domain.eo;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableLogic;
+//import com.baomidou.mybatisplus.annotation.FieldFill;
+//import com.baomidou.mybatisplus.annotation.TableField;
+//import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.deepexi.util.config.JsonDateSerializer;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import java.io.Serializable;
@@ -20,17 +21,19 @@ public class SuperEntity implements Serializable {
 
     private String createdBy;
 
-    @TableField(fill = FieldFill.INSERT)
+//    @TableField(fill = FieldFill.INSERT)
     @JsonSerialize(using = JsonDateSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date createdAt;
 
     private String updatedBy;
 
-    @TableField(fill = FieldFill.UPDATE)
+//    @TableField(fill = FieldFill.UPDATE)
     @JsonSerialize(using = JsonDateSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date updatedAt;
 
-    @TableLogic
+//    @TableLogic
     private Integer dr = 0;
 
     public String getId() {

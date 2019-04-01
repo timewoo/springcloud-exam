@@ -1,0 +1,119 @@
+2019-04-01 18:52:23.871 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9469ed18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 18:52:25.882 INFO  [main] com.deepexi.b.ConsumerApplication: - No active profile set, falling back to default profiles: default
+2019-04-01 18:52:29.969 INFO  [main] o.s.cloud.context.scope.GenericScope: - BeanFactory id=3cc23113-d27b-332c-b0cd-2fe8a8d79ea1
+2019-04-01 18:52:30.562 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: - Bean 'spring.cloud.sentinel-org.springframework.cloud.alibaba.sentinel.SentinelProperties' of type [org.springframework.cloud.alibaba.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 18:52:30.593 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: - Bean 'org.springframework.cloud.alibaba.sentinel.custom.SentinelAutoConfiguration' of type [org.springframework.cloud.alibaba.sentinel.custom.SentinelAutoConfiguration$$EnhancerBySpringCGLIB$$35bab63e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 18:52:30.665 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9469ed18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 18:52:32.553 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer: - Tomcat initialized with port(s): 8080 (http)
+2019-04-01 18:52:32.617 INFO  [main] o.a.catalina.core.StandardService: - Starting service [Tomcat]
+2019-04-01 18:52:32.621 INFO  [main] o.a.catalina.core.StandardEngine: - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-04-01 18:52:32.712 INFO  [main] o.a.c.core.AprLifecycleListener: - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;F:\jdk1.8.0_92\bin;F:\jdk1.8.0_92\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;F:\mysql\mysql-5.6.24-win32\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;F:\nodejs;C:\Users\YL\AppData\Roaming\npm;C:\Program Files\Git\cmd;F:\myeclipse\apache-maven-3.3.9\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%CXF_HOME%\bin;E:\erlang\erl10.3\bin;C:\Users\YL\AppData\Local\Microsoft\WindowsApps;;C:\Users\YL\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2019-04-01 18:52:35.717 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/]: - Initializing Spring embedded WebApplicationContext
+2019-04-01 18:52:35.719 INFO  [main] o.s.web.context.ContextLoader: - Root WebApplicationContext: initialization completed in 9693 ms
+2019-04-01 18:52:35.775 INFO  [main] o.s.c.a.s.SentinelWebAutoConfiguration: - [Sentinel Starter] register Sentinel with urlPatterns: [/*].
+2019-04-01 18:52:36.048 INFO  [main] o.s.b.w.s.FilterRegistrationBean: - Mapping filter: 'commonFilter' to urls: [/*]
+2019-04-01 18:52:36.049 INFO  [main] o.s.b.w.s.FilterRegistrationBean: - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 18:52:36.050 INFO  [main] o.s.b.w.s.FilterRegistrationBean: - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 18:52:36.050 INFO  [main] o.s.b.w.s.FilterRegistrationBean: - Mapping filter: 'formContentFilter' to: [/*]
+2019-04-01 18:52:36.053 INFO  [main] o.s.b.w.s.FilterRegistrationBean: - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 18:52:36.054 INFO  [main] o.s.b.w.s.ServletRegistrationBean: - Servlet dispatcherServlet mapped to [/]
+2019-04-01 18:52:38.708 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping: - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-01 18:52:38.808 WARN  [main] c.n.c.sources.URLConfigurationSource: - No URLs will be polled as dynamic configuration sources.
+2019-04-01 18:52:38.810 INFO  [main] c.n.c.sources.URLConfigurationSource: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-04-01 18:52:38.833 WARN  [main] c.n.c.sources.URLConfigurationSource: - No URLs will be polled as dynamic configuration sources.
+2019-04-01 18:52:38.835 INFO  [main] c.n.c.sources.URLConfigurationSource: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-04-01 18:52:39.386 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor: - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-01 18:52:43.413 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory: - Setting initial instance status as: STARTING
+2019-04-01 18:52:43.498 INFO  [main] c.netflix.discovery.DiscoveryClient: - Initializing Eureka in region us-east-1
+2019-04-01 18:52:44.134 INFO  [main] c.n.d.p.DiscoveryJerseyProvider: - Using JSON encoding codec LegacyJacksonJson
+2019-04-01 18:52:44.135 INFO  [main] c.n.d.p.DiscoveryJerseyProvider: - Using JSON decoding codec LegacyJacksonJson
+2019-04-01 18:52:44.488 INFO  [main] c.n.d.p.DiscoveryJerseyProvider: - Using XML encoding codec XStreamXml
+2019-04-01 18:52:44.488 INFO  [main] c.n.d.p.DiscoveryJerseyProvider: - Using XML decoding codec XStreamXml
+2019-04-01 18:52:45.001 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver: - Resolving eureka endpoints via configuration
+2019-04-01 18:52:45.448 INFO  [main] c.netflix.discovery.DiscoveryClient: - Disable delta property : false
+2019-04-01 18:52:45.450 INFO  [main] c.netflix.discovery.DiscoveryClient: - Single vip registry refresh property : null
+2019-04-01 18:52:45.450 INFO  [main] c.netflix.discovery.DiscoveryClient: - Force full registry fetch : false
+2019-04-01 18:52:45.452 INFO  [main] c.netflix.discovery.DiscoveryClient: - Application is null : false
+2019-04-01 18:52:45.452 INFO  [main] c.netflix.discovery.DiscoveryClient: - Registered Applications size is zero : true
+2019-04-01 18:52:45.455 INFO  [main] c.netflix.discovery.DiscoveryClient: - Application version is -1: true
+2019-04-01 18:52:45.456 INFO  [main] c.netflix.discovery.DiscoveryClient: - Getting all instance registry info from the eureka server
+2019-04-01 18:52:46.626 INFO  [main] c.netflix.discovery.DiscoveryClient: - The response status is 200
+2019-04-01 18:52:46.633 INFO  [main] c.netflix.discovery.DiscoveryClient: - Starting heartbeat executor: renew interval is: 30
+2019-04-01 18:52:46.640 INFO  [main] c.n.discovery.InstanceInfoReplicator: - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-04-01 18:52:46.672 INFO  [main] c.netflix.discovery.DiscoveryClient: - Discovery Client initialized at timestamp 1554115966643 with initial instances count: 0
+2019-04-01 18:52:46.685 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry: - Registering application deepexi-service-b-provider with eureka with status UP
+2019-04-01 18:52:46.686 INFO  [main] c.netflix.discovery.DiscoveryClient: - Saw local status change event StatusChangeEvent [timestamp=1554115966686, current=UP, previous=STARTING]
+2019-04-01 18:52:46.690 INFO  [nfoReplicator-0] c.netflix.discovery.DiscoveryClient: - DiscoveryClient_DEEPEXI-SERVICE-B-PROVIDER/DESKTOP-MBIC44C:deepexi-service-b-provider:8080: registering service...
+2019-04-01 18:52:46.700 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper: - Context refreshed
+2019-04-01 18:52:46.747 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper: - Found 1 custom documentation plugin(s)
+2019-04-01 18:52:46.856 INFO  [main] s.d.s.w.s.ApiListingReferenceScanner: - Scanning for api listing references
+2019-04-01 18:52:47.185 INFO  [nfoReplicator-0] c.netflix.discovery.DiscoveryClient: - DiscoveryClient_DEEPEXI-SERVICE-B-PROVIDER/DESKTOP-MBIC44C:deepexi-service-b-provider:8080 - registration status: 204
+2019-04-01 18:52:47.404 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer: - Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-01 18:52:47.408 INFO  [main] com.deepexi.b.ConsumerApplication: - Started ConsumerApplication in 29.819 seconds (JVM running for 67.734)
+2019-04-01 18:52:48.017 INFO  [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-01 18:52:48.018 INFO  [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet: - Initializing Servlet 'dispatcherServlet'
+2019-04-01 18:52:48.055 INFO  [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet: - Completed initialization in 37 ms
+2019-04-01 18:53:16.634 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Disable delta property : false
+2019-04-01 18:53:16.636 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Single vip registry refresh property : null
+2019-04-01 18:53:16.639 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Force full registry fetch : false
+2019-04-01 18:53:16.640 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Application is null : false
+2019-04-01 18:53:16.645 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Registered Applications size is zero : true
+2019-04-01 18:53:16.646 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Application version is -1: false
+2019-04-01 18:53:16.649 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - Getting all instance registry info from the eureka server
+2019-04-01 18:53:16.750 INFO  [freshExecutor-0] c.netflix.discovery.DiscoveryClient: - The response status is 200
+2019-04-01 18:57:45.459 INFO  [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver: - Resolving eureka endpoints via configuration
+2019-04-01 18:58:00.308 INFO  [nio-8080-exec-3] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() start =====,参数:
+[1,10,20]
+2019-04-01 18:58:00.784 INFO  [nio-8080-exec-3] c.n.config.ChainedDynamicProperty: - Flipping property: deepexi-service-a-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-04-01 18:58:00.793 INFO  [nio-8080-exec-3] c.n.u.c.ShutdownEnabledTimer: - Shutdown hook installed for: NFLoadBalancer-PingTimer-deepexi-service-a-provider
+2019-04-01 18:58:00.801 INFO  [nio-8080-exec-3] c.n.loadbalancer.BaseLoadBalancer: - Client: deepexi-service-a-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=deepexi-service-a-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-04-01 18:58:00.808 INFO  [nio-8080-exec-3] c.n.l.DynamicServerListLoadBalancer: - Using serverListUpdater PollingServerListUpdater
+2019-04-01 18:58:00.843 INFO  [nio-8080-exec-3] c.n.config.ChainedDynamicProperty: - Flipping property: deepexi-service-a-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-04-01 18:58:00.845 INFO  [nio-8080-exec-3] c.n.l.DynamicServerListLoadBalancer: - DynamicServerListLoadBalancer for client deepexi-service-a-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=deepexi-service-a-provider,current list of Servers=[DESKTOP-MBIC44C:8088],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-MBIC44C:8088;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@295c11a8
+2019-04-01 18:58:01.815 INFO  [erListUpdater-0] c.n.config.ChainedDynamicProperty: - Flipping property: deepexi-service-a-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-04-01 18:58:03.743 INFO  [nio-8080-exec-3] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() end =====,响应时间:3082毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"content":[{"id":"10","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"榴莲","price":990},{"id":"11","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"柚子","price":291},{"id":"12","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"小番茄","price":200},{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50},{"id":"3","dr":0,"name":"桃子","price":123},{"id":"5","dr":0,"name":"猕猴桃","price":50},{"id":"6","dr":0,"name":"桔子","price":33},{"id":"7","dr":0,"name":"菠萝","price":90},{"id":"8","dr":0,"name":"芒果","price":766},{"id":"9","dr":0,"name":"红枣","price":29}],"total":0,"pageNo":0,"pageSize":0,"first":true,"contentSize":10,"totalPage":1}}
+2019-04-01 18:58:38.994 INFO  [nio-8080-exec-4] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() start =====,参数:
+[1,10,20]
+2019-04-01 18:58:39.072 INFO  [nio-8080-exec-4] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() end =====,响应时间:67毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"content":[{"id":"10","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"榴莲","price":990},{"id":"11","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"柚子","price":291},{"id":"12","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"小番茄","price":200},{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50},{"id":"3","dr":0,"name":"桃子","price":123},{"id":"5","dr":0,"name":"猕猴桃","price":50},{"id":"6","dr":0,"name":"桔子","price":33},{"id":"7","dr":0,"name":"菠萝","price":90},{"id":"8","dr":0,"name":"芒果","price":766},{"id":"9","dr":0,"name":"红枣","price":29}],"total":0,"pageNo":0,"pageSize":0,"first":true,"contentSize":10,"totalPage":1}}
+2019-04-01 19:00:47.736 INFO  [io-8080-exec-10] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() start =====,参数:
+[1,10,20]
+2019-04-01 19:00:47.785 INFO  [io-8080-exec-10] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() end =====,响应时间:30毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"content":[{"id":"10","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"榴莲","price":990},{"id":"11","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"柚子","price":291},{"id":"12","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"小番茄","price":200},{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50},{"id":"3","dr":0,"name":"桃子","price":123},{"id":"5","dr":0,"name":"猕猴桃","price":50},{"id":"6","dr":0,"name":"桔子","price":33},{"id":"7","dr":0,"name":"菠萝","price":90},{"id":"8","dr":0,"name":"芒果","price":766},{"id":"9","dr":0,"name":"红枣","price":29}],"total":0,"pageNo":0,"pageSize":0,"first":true,"contentSize":10,"totalPage":1}}
+2019-04-01 19:00:59.539 INFO  [nio-8080-exec-1] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() start =====,参数:
+[1,10,0]
+2019-04-01 19:00:59.580 INFO  [nio-8080-exec-1] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() end =====,响应时间:37毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"content":[{"id":"1","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"苹果","price":20},{"id":"10","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"榴莲","price":990},{"id":"11","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"柚子","price":291},{"id":"12","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"小番茄","price":200},{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50},{"id":"14","tenantId":"","createdBy":"","createdAt":"2019-03-30 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":5},{"id":"15","tenantId":"","createdBy":"","createdAt":"2019-03-30 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":5},{"id":"16","tenantId":"","createdBy":"","createdAt":"2019-03-30 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"香蕉","price":5},{"id":"2","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"梨","price":10},{"id":"3","dr":0,"name":"桃子","price":123}],"total":0,"pageNo":0,"pageSize":0,"first":true,"contentSize":10,"totalPage":1}}
+2019-04-01 19:01:37.127 INFO  [nio-8080-exec-5] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() start =====,参数:
+[1,10,20]
+2019-04-01 19:01:37.184 INFO  [nio-8080-exec-5] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductList() end =====,响应时间:42毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"content":[{"id":"10","createdAt":"2019-03-30 00:00:00","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"榴莲","price":990},{"id":"11","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"柚子","price":291},{"id":"12","updatedAt":"2019-03-30 00:00:00","dr":1,"name":"小番茄","price":200},{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50},{"id":"3","dr":0,"name":"桃子","price":123},{"id":"5","dr":0,"name":"猕猴桃","price":50},{"id":"6","dr":0,"name":"桔子","price":33},{"id":"7","dr":0,"name":"菠萝","price":90},{"id":"8","dr":0,"name":"芒果","price":766},{"id":"9","dr":0,"name":"红枣","price":29}],"total":0,"pageNo":0,"pageSize":0,"first":true,"contentSize":10,"totalPage":1}}
+2019-04-01 19:02:45.463 INFO  [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver: - Resolving eureka endpoints via configuration
+2019-04-01 19:03:46.981 INFO  [nio-8080-exec-6] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductById() start =====,参数:
+["13"]
+2019-04-01 19:03:47.031 INFO  [nio-8080-exec-6] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.getProductById() end =====,响应时间:45毫秒,响应内容:
+{"code":"0","msg":"ok","payload":{"id":"13","tenantId":"","createdBy":"","createdAt":"2019-03-20 00:00:00","updatedBy":"","updatedAt":"2019-03-30 00:00:00","dr":0,"name":"香蕉","price":50}}
+2019-04-01 19:05:41.949 INFO  [nio-8080-exec-2] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.createProduct() start =====,参数:
+[{"createdAt":1553961600000,"createdBy":"","dr":0,"id":"17","name":"香蕉","price":5,"tenantId":"","updatedAt":1553961600000,"updatedBy":""}]
+2019-04-01 19:05:42.149 INFO  [nio-8080-exec-2] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.createProduct() end =====,响应时间:197毫秒,响应内容:
+{"code":"0","msg":"ok","payload":1}
+2019-04-01 19:07:45.465 INFO  [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver: - Resolving eureka endpoints via configuration
+2019-04-01 19:07:46.156 INFO  [nio-8080-exec-1] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.deleteProductById() start =====,参数:
+["17"]
+2019-04-01 19:07:46.239 INFO  [nio-8080-exec-1] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.deleteProductById() end =====,响应时间:82毫秒,响应内容:
+{"code":"0","msg":"ok","payload":true}
+2019-04-01 19:08:30.129 INFO  [nio-8080-exec-4] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.bathDeleteProduct() start =====,参数:
+[["17","13"]]
+2019-04-01 19:08:30.228 INFO  [nio-8080-exec-4] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.bathDeleteProduct() end =====,响应时间:96毫秒,响应内容:
+{"code":"0","msg":"ok","payload":true}
+2019-04-01 19:10:00.708 INFO  [io-8080-exec-10] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.updateProductById() start =====,参数:
+["13",{"createdAt":1553875200000,"createdBy":"","dr":0,"name":"香蕉","price":500,"tenantId":"","updatedAt":1553875200000,"updatedBy":""}]
+2019-04-01 19:10:00.762 INFO  [io-8080-exec-10] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.updateProductById() end =====,响应时间:52毫秒,响应内容:
+{"code":"0","msg":"ok","payload":0}
+2019-04-01 19:10:50.203 INFO  [nio-8080-exec-2] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.updateProductById() start =====,参数:
+["14",{"createdAt":1553875200000,"createdBy":"","dr":0,"name":"香蕉","price":500,"tenantId":"","updatedAt":1553875200000,"updatedBy":""}]
+2019-04-01 19:10:50.278 INFO  [nio-8080-exec-2] com.deepexi.b.aop.LogAspect: - 日志统一打印 ===== com.deepexi.b.controller.ProductController.updateProductById() end =====,响应时间:70毫秒,响应内容:
+{"code":"0","msg":"ok","payload":1}

@@ -7,6 +7,7 @@ import com.deepexi.a.extension.ApplicationException;
 import com.deepexi.a.mapper.ProductMapper;
 import com.deepexi.util.pageHelper.PageBean;
 import com.github.pagehelper.PageHelper;
+import io.swagger.models.auth.In;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,17 @@ public class ProductServiceImpl implements ProductService {
     public Boolean deleteProductById(String id) {
         productMapper.deleteById(id);
         return true;
+    }
+
+    @Override
+    public Boolean bathDeleteProductByIds(List<String> ids) {
+        productMapper.deleteBatchIds(ids);
+        return true;
+    }
+
+    @Override
+    public Integer updateProduct(Product product) {
+        return productMapper.updateById(product);
     }
 
     @SentinelResource(value = "testSentinel", fallback = "doFallback", blockHandler = "exceptionHandler")

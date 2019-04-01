@@ -8,6 +8,7 @@ import com.deepexi.a.depend.DemoClient;
 import com.deepexi.a.domain.eo.Product;
 import com.deepexi.util.config.Payload;
 
+import com.deepexi.util.pageHelper.PageBean;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -17,18 +18,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Created by donh on 2018/11/5.
  */
 @Api(value = "productcontroller",description = "商品管理")
 @RestController
-@RequestMapping("/api/v1/products")
+@RequestMapping("/provider")
 public class ProductController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
-    @Autowired
-    private DemoClient demolient; // feign让跨服务调用能够看起来像本地调用
 
     @Autowired
     private ProductService productService;
@@ -39,38 +39,46 @@ public class ProductController {
             @ApiImplicitParam(name = "size",value = "每页查询数",required = false,dataType = "Integer"),
             @ApiImplicitParam(name = "price",value = "价格",required = false,dataType = "Integer")
     })
-    @GetMapping
-    public Payload getProductList(@RequestParam(name = "page", required = false, defaultValue = "1") Integer page,
-                                  @RequestParam(name = "size", required = false, defaultValue = "10") Integer size,
-                                  @RequestParam(name = "price", required = false, defaultValue = "0") Integer price) {
-        return new Payload(productService.getProductList(page, size, price));
+    @GetMapping(value = "/getProductList")
+    public PageBean<Product> getProductList(@RequestParam(name = "page", required = false, defaultValue = "1") Integer page,
+                                   @RequestParam(name = "size", required = false, defaultValue = "10") Integer size,
+                                   @RequestParam(name = "price", required = false, defaultValue = "0") Integer price) {
+        return productService.getProductList(page, size, price);
     }
 
-    @GetMapping("/{id:[a-zA-Z0-9]+}")
-    public Payload getProductById(@PathVariable("id") String id) {
-        return new Payload(productService.getProductById(id));
+    @ApiOperation(value ="根据Id查询商品",notes ="",httpMethod = "GET")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "商品标识",required = false,dataType = "String")
+    })
+    @GetMapping(value = "/getProductById")
+    public Product getProductById(@RequestParam("id") String id) {
+        return productService.getProductById(id);
     }
 
-    @PostMapping
-    public Payload createProduct(@RequestBody Product product) {
-        return new Payload(productService.createProduct(product));
+    @ApiOperation(value ="新增商品",notes ="",httpMethod = "post")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "商品标识",required = false,dataType = "String")
+    })
+    @PostMapping(value = "/add")
+    public Integer createProduct(@RequestBody Product product) {
+        return productService.createProduct(product);
     }
 
     @PutMapping("/{id:[a-zA-Z0-9]+}")
-    public Payload updateProductById(@PathVariable("id") String id, Product product) {
-        return new Payload(null);
+    public Integer updateProductById(@RequestBody Product product) {
+        return productService.updateProduct(product);
     }
 
-    @DeleteMapping("/{id:[a-zA-Z0-9]+}")
-    public Payload deleteProductById(@PathVariable("id") String id) {
-        return new Payload(productService.deleteProductById(id));
+    @DeleteMapping(value = "/delete")
+    public Boolean deleteProductById(@RequestParam("id") String id) {
+        return productService.deleteProductById(id);
     }
 
-    @GetMapping("/testError")
-    public Payload testError() {
-        productService.testError();
-        return new Payload(true);
+    @DeleteMapping(value = "/bathDelete")
+    public Boolean bathDeleteProduct(@RequestParam("ids")List<String> ids){
+        return productService.bathDeleteProductByIds(ids);
     }
+
 
     @GetMapping("/testSentinel")
     @SentinelResource(value = "testSentinel", blockHandler = "exceptionHandler")
@@ -91,9 +99,4 @@ public class ProductController {
         throw new ApplicationException("100", "熔断降级处理");
     }
 
-    @GetMapping("/testFeign")
-    public Payload testFeign(@RequestParam Integer a, @RequestParam Integer b) {
-        logger.info("远程调用成功: Hello World!!");
-        return new Payload(demolient.add(10, 20));
-    }
 }

@@ -10,6 +10,7 @@
     <modules>
         <module>deepexi-service-b-api</module>
         <module>deepexi-service-b-provider</module>
+        <module>../optimus-commons-master</module>
     </modules>
 
     <parent>
@@ -22,12 +23,7 @@
         <dependency>
             <groupId>com.deepexi.common</groupId>
             <artifactId>optimus-common</artifactId>
-            <version>1.1.5-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.0.6</version>
+            <version>1.1.6-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
